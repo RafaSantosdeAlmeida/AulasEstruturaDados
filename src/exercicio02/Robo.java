@@ -41,6 +41,10 @@ public abstract class Robo {
             this.y = y;
         }
     }
+
+    public Tela getTela() {
+        return tela;
+    }
     
     @Override
     public String toString(){

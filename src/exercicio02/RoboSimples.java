@@ -20,12 +20,20 @@ public class RoboSimples extends Robo {
 
     @Override
     public void moverNorte(int distancia) {
-    
+        // TO DO: verificar se tem obstáculo
+        int novoX = getX() - distancia;
+        if(novoX >= 0){
+            setX(novoX);
+        }
     }
 
     @Override
     public void moverSul(int distancia) {
-    
+        // TO DO: verificar se tem obstáculo
+        int novoX = getX() + distancia;
+        if(novoX <= super.getTela().getMaxY()){
+            setX(novoX);
+        }
     }
 
     @Override
